@@ -157,3 +157,136 @@ Data Sanitization and Security Measures: Ensure list data is sanitized to preven
 Night Mode: A special darker version to reduce eye strain in low-light conditions.
 Holiday Mode and Special Features: Special features or themes activated during holidays or events.
 Mute Notifications: Option to mute notifications for specific lists or items within a list.
+
+==========================================================================
+==========================================================================
+==========================================================================
+==========================================================================
+==========================================================================
+# bracketpair.com
+
+build a list manipulation tool as a react component and host it on github pages.
+use vite and typescript for the development environment.
+this will a front-end only component as it will be hosted on github pages.
+the component will be part of my portfolio website which we are going to build here as well; consider it the app in which this component will be used.
+meet all applicable accessibility standards (color-contrast, etc)
+the entire project will be hosted on github pages.  I'm not sure how to do routing.  I'd like the app/portfolio site to have a section that is open-to-the-public, but where I am the target audience.
+
+### Input Management
+
+1. **Input Field(s) for List Items & Manual Addition**: Users can enter list items either as a comma-separated list in a single input field or individually in separate fields.
+2. **Data Validation and Quality Checker**: Alert the user if the format of the data is incorrect or inconsistent (useful for number-based or date-based lists).
+3. **Batch Import and Bulk Operations**: Import list items from a text file, copy-paste from the clipboard, or directly from a webpage by specifying the URL. Apply transformations like 'convert to uppercase' or 'apply regex' to selected items.
+4. **Auto-complete**: Suggest possible list items as the user types, based on the current list or a predefined set.
+5. **Clipboard Watcher**: Watch the clipboard for new data and suggest adding it to the list.
+6. **Tag Autocompletion and Auto-Tagging**: Suggest or automatically assign tags based on the current item being added or edited.
+7. **Automatic Item Classification**: Use machine learning algorithms to automatically categorize list items as they are added.
+8. **Import from Web**: Directly import lists from a webpage by specifying the URL.
+
+### Duplication Management
+
+1. **Duplicate Identification & Count**: Real-time ability to identify duplicates and show them to the user along with the count of duplicate items for each list item.
+2. **Case Sensitivity Toggle & Whitespace Sensitivity**: Option to consider or ignore case and leading/trailing whitespaces when identifying duplicates.
+3. **Manual Deduplication & Preview**: Provide checkboxes next to duplicates to allow manual selection and removal.
+4. **Auto Deduplication**: Automatically remove duplicate items from the list.
+5. **Smart Deduplication and Anomaly Detection**: Suggest potential deduplications based on similar items, not just exact matches. Use machine learning algorithms to detect anomalies in the list.
+6. **Regex-based Deduplication**: Advanced users can enter a regex pattern to match duplicates.
+7. **Notifications and Alerts**: Push notifications for instant duplicate alerts.
+8. **Audio Notifications and Auditory Cues**: Auditory signals for significant events like adding an item or identifying duplicates.
+
+### Sorting and Filtering
+
+1. **Search Functionality**: Allow users to search through the list items quickly.
+2. **Dynamic Filtering & Data Validation**: Filter items in real-time based on user-defined conditions, like string matching or numerical ranges.
+3. **Sort Options & Multi-Level Sorting**: Ability to sort the list in ascending, descending, or original order, and by multiple criteria.
+4. **Quick Summarization and NLP**: Generate a quick summary of the list items using natural language processing.
+5. **Conditional Sorting and Conflict Resolution**: Sort based on multiple attributes. Handle conflicts in multi-user mode and maintain a detailed log of sorting activities.
+6. **Fuzzy Sorting**: Sort by approximate string matching.
+7. **Location-Based Sorting and Geo-Tagging and Geofencing**: Sort and filter items based on geolocation information. Trigger actions or notifications based on the geographical location of the user.
+8. **Batch Transformation**: Schedule multiple items for transformations like 'convert to uppercase' based on common settings.
+Faceted Search and Quick Filters: Advanced search options using multiple dimensions, along with predefined filters for quick viewing.
+
+### Data Organization and Display
+
+1. **Pagination**: Implement pagination for long lists.
+2. **Tagging/Categorizing**: Allow users to tag or categorize list items for better organization.
+3. **Item Notes and Time-Tracking**: Allow users to add notes or comments to individual list items. Record the time spent on each list item.
+4. **Drag and Drop**: Allow manual rearrangement of the list order using drag and drop.
+5. **Favorites/Bookmarks & Context Menu**: Option to mark certain items as favorites or bookmarks. Right-click to open a context menu with options like delete, move, copy, etc.
+6. **Multi-Column Support**: Ability to treat each list item as a record with multiple fields or columns.
+7. **Hierarchy Visualization and Milestone Tracking**: A visual representation of hierarchical relationships between list items, like a tree view. Track goals related to hierarchical items.
+8. **List Item Dependencies and Version Control**: Indicate if some list items depend on others and adjust sorting/processing accordingly. Ability to revert the list and individual items to previous versions.
+9. **Variable Layouts and Data Visualization**: Option to view the list in different layouts such as cards, table, or detailed view. Represent list data in visual formats like charts or graphs.
+10. **Heatmaps and Usage Analytics**: Visual indicators and statistics to show user interaction with the list items.
+
+### Export and Backup
+
+1. **Export Options & Import/Export Formats**: Ability to export the deduplicated list to a text file, clipboard, or multiple formats like CSV, JSON, etc.
+2. **OCR and Data Import/Export**: Import lists from images using OCR technology. Integrate with third-party services for additional data import/export capabilities.
+3. **Export Profiles**: Save various exporting settings profiles so users can easily export lists with the same settings in the future.
+4. **Local and Server-side Backups**: Options to create backups on the user's machine and, as a stretch goal, server-side.
+5. **Data Encryption**: Options to encrypt sensitive list data.
+6. **Version Control and Item Versioning**: Ability to revert the list and individual items to previous versions.
+Social Media Sharing and Quick Sharing Options: Quick buttons for sharing list items or the whole list on social platforms, including QR code printing for each item.
+
+### User Interface and Preferences
+
+1. **Color Contrast & ARIA Landmarks**: Ensuring that all text has a sufficient color contrast ratio and proper ARIA landmarks for all interactive elements.
+2. **VoiceOver Support & Keyboard Navigation**: Label elements properly for screen reader support. Support for tab-based navigation, enter and escape keys.
+3. **Light and Dark Mode & Themes**: A toggle switch to alternate between light and dark modes. Allow users to select from various themes.
+4. **Responsive Design & Focus Indicators**: Ensure that the component is usable on different screen sizes. Clearly indicate which component is currently focused during tab navigation.
+5. **High-Contrast Mode and Accessibility Checker**: A mode specifically designed for visually impaired users. A built-in tool to check that any added content meets accessibility standards.
+6. **Screen Magnification and Modes**: Allow users to easily zoom in and out. Modes tailored for various types of disabilities, e.g., 'screen-reader friendly' mode.
+7. **Keyboard Shortcuts**: Additional keyboard shortcuts for quicker navigation.
+
+### User Assistance and Guidance
+
+1. **Tooltips & Quick Guide**: Tooltips on hover for each button and a downloadable Quick Guide.
+2. **User Onboarding and Interactive Guides**: An interactive guide to help new users understand the tool.
+3. **Tutorial/Help and FAQ**: A tutorial or help section guiding users through each feature of the list component. An FAQ section to address common questions and issues.
+4. **Error Handling & User Feedback**: Show proper error messages for invalid actions. Ask for user feedback through in-app surveys or rating requests.
+5. **Multi-language Support**: Option to switch languages.
+6. **Live Chat**: A live chat support option to address common questions and issues.
+
+### Additional Security and Accessibility Features
+
+1. **Public/Private Sections and Guest Access**: Some parts of the list can be made public, while others remain private. Allow read-only access to non-registered users
+
+.
+2. **2-Step Verification and ReCAPTCHA**: Enhanced login security.
+3. **Single Sign-On (SSO) and Third-Party Login**: Options to log in using Google, Facebook, or other third-party platforms.
+4. **Activity Log and Audit Trail**: Log all user activities and interactions with the list for auditing purposes.
+5. **Selective Sharing and Role-Based Access Control**: Share individual list items or entire lists with specific people. Set roles and permissions for shared lists.
+6. **API for Integration with Other Services**: Allow other services to interact with your list component through an API.
+7. **PWA (Progressive Web App) and Offline Mode**: Functionality to install the app on mobile devices and work offline.
+
+==================================
+can you merge the items of the list below into the above categories. if there are similar items in the same category please merge and retain all relevant the items' title and definition into a single entry for use with GPT4.0. for each category, sort items in order of implementation complexity for a front-end only react app. return the entire list unabridged. be exhaustive; so long that I have to ask you to continue.
+
+Social Media Sharing and Quick Sharing Options: Quick buttons for sharing list items or the whole list on social platforms, including QR code printing for each item.
+Faceted Search and Quick Filters: Advanced search options using multiple dimensions, along with predefined filters for quick viewing.
+Item Prioritization and Watch List: Mark items as high, medium, or low priority and move important or priority items for quick access.
+Temporary and Ephemeral Lists: Items or lists that automatically disappear after a set period or under certain conditions.
+Split and Merge Items: Ability to divide one item into multiple new items or combine multiple items into one.
+Voice Commands and AI Predictive Text: Voice recognition for list manipulation and predictive text options based on list content.
+Multi-device Sync and Real-Time Updates: Synchronize the list in real-time across different devices and auto-refresh options.
+Time Zone and Language Support: Convert times based on time zones and offer multiple language options in text-to-speech.
+Dashboard and Activity Digest: A homepage showing an overview of multiple lists with key metrics, and daily or weekly summaries of list activities.
+
+
+
+
+
+
+Profile Customization and Themes: Personalization of user profiles and custom color themes, including light and dark modes.
+Gamification and User Engagement: Points, badges, and other game-like features to make list management more engaging.
+Code Snippets and Technical Features: Support for formatted code snippets for coding or technical tasks.
+Drag to Nest and Parent-Child Relationships: Drag an item on top of another to automatically create a sub-list and define complex relationships between items.
+Collapsible UI Panels and Focused UI: Allow users to collapse UI panels they are not using to focus on the list.
+Spellcheck and Grammar: Integrate spellcheck and grammar corrections for list items.
+Shortcut Widgets and One-Click Operations**: Mini-widgets or quick action buttons for quick list access and preset operations for common tasks.
+IFTTT Integration and Conditional Automation: Integrate with If This Then That (IFTTT) for conditional automated actions.
+Data Sanitization and Security Measures: Ensure list data is sanitized to prevent vulnerabilities like cross-site scripting or SQL injection.
+Night Mode: A special darker version to reduce eye strain in low-light conditions.
+Holiday Mode and Special Features: Special features or themes activated during holidays or events.
+Mute Notifications: Option to mute notifications for specific lists or items within a list.
